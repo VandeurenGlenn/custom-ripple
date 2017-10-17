@@ -1,0 +1,12 @@
+{
+  "name": "custom-ripple",
+  "version": "0.9.0",
+  "main": "custom-ripple.js",
+  "flat": true,
+  "repository": "https://github.com/VandeurenGlenn/custom-ripple.git",
+  "author": "VandeurenGlenn <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "backed": "^0.9.3"
+  }
+}
