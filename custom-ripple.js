@@ -1,9 +1,10 @@
 import {define} from '../backed/src/utils.js';
-import LitMixin from '../backed/mixins/lit-mixin.js';
+import RenderMixin from '../custom-renderer-mixin/src/render-mixin.js';
 
-export default define(class CustomRipple extends LitMixin(HTMLElement) {
+export default define(class CustomRipple extends RenderMixin(HTMLElement) {
   constructor() {
     super();
+    this.attachShadow({mode: 'open'})
   }
 	/**
 	 * Runs the ripple
@@ -12,10 +13,10 @@ export default define(class CustomRipple extends LitMixin(HTMLElement) {
 		this.classList.add('run');
 		setTimeout(() => {
 			this.classList.remove('run');
-		}, 320);
+		}, 160);
 	}
 
-  render() {
+  get template() {
     return html`
     <style>
       :host {
