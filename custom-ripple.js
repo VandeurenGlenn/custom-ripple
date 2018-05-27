@@ -1,4 +1,4 @@
-import {define} from '../backed/src/utils.js';
+import define from '../backed/src/utils/define.js';
 import RenderMixin from '../custom-renderer-mixin/src/render-mixin.js';
 
 export default define(class CustomRipple extends RenderMixin(HTMLElement) {

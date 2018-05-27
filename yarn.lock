@@ -2,12 +2,21 @@
 # yarn lockfile v1
 
 
-backed@^0.9.3:
-  version "0.9.3"
-  resolved "https://registry.yarnpkg.com/backed/-/backed-0.9.3.tgz#fe559c2d6c57f56182e11323183c49fd3ea42a4b"
-  dependencies:
-    lit-html "^0.7.1"
+backed@0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/backed/-/backed-0.12.0.tgz#871a0ec98453a75de54c9d33c55481b423219087"
 
-lit-html@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-0.7.1.tgz#61785045cf84f9ee955fa078c2985b52b765ad16"
+custom-html-tag@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/custom-html-tag/-/custom-html-tag-0.1.1.tgz#9a018c43eeab45a59c68bc760c6670921a4e579a"
+
+custom-renderer-mixin@^0.1.4:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/custom-renderer-mixin/-/custom-renderer-mixin-0.1.5.tgz#ae1ff6f77d4fff99652d06f0ed827377c1179973"
+  dependencies:
+    custom-html-tag "^0.1.0"
+    custom-renderer "^0.1.0"
+
+custom-renderer@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/custom-renderer/-/custom-renderer-0.1.1.tgz#4a3ba91bfdc2bd543001b448d68e6445a67d5549"
